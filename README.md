@@ -1,5 +1,7 @@
 # Api Test Velco
 
+Instructions : 
+
 - Lancer un terminal et récupérer le projet depuis le repo GIT : 
 	git clone https://github.com/logg06/ApiTestVelco.git
 
@@ -16,3 +18,13 @@
 	- POST sortBy size (http://localhost:8888/api/json?sortBy=size) : pour un tri d'ordre croissant suivant la taille des références contenues dans le fichier
 	
 Les requêtes ont comme BODY de type form-data un fichier à uploader (de key : "file" et de value le fichier à uploader) : deux exemples de fichiers sont disponibles dans src/main/resources
+
+
+Documentation : 
+
+Cette api contient une classe principale Application qui permet de lancer l'application Spring-boot et le controller de l'api ReferenceController.
+
+Le controller est défini par une méthode POST qui possède deux paramètres de requête :
+	- Un MultipartFile étant le fichier consommé par l'api
+	- Un paramètre optionnel sortBy permettant de réaliser des tris (par taille ou par prix)
+Cette méthode retourne en sortie un flux JSON contenant une liste de références et les éventuelles erreurs associées.
