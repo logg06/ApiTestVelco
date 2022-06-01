@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d0aa5378-b8c2-424e-8b16-8a621ec39362",
+		"_postman_id": "74ca50a3-4a56-4960-982f-0b06325afb4b",
 		"name": "API Velco",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -16,7 +16,7 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": "/C:/Users/rseisser/Documents/Perso/velco2/api/src/main/resources/fichiers/fichierTest"
+							"src": "/C:/Users/rseisser/Documents/Perso/ApiTestVelco/api/src/main/resources/fichiers/fichierRefKo.txt"
 						}
 					]
 				},
@@ -30,13 +30,6 @@
 					"path": [
 						"api",
 						"json"
-					],
-					"query": [
-						{
-							"key": "file",
-							"value": null,
-							"disabled": true
-						}
 					]
 				}
 			},
@@ -53,12 +46,12 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": "/C:/Users/rseisser/Documents/Perso/velco2/api/src/main/resources/fichiers/fichierTest"
+							"src": "/C:/Users/rseisser/Documents/Perso/ApiTestVelco/api/src/main/resources/fichiers/fichierRefKo.txt"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://localhost:8888/api/json",
+					"raw": "http://localhost:8888/api/json?sortBy=price",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -70,9 +63,8 @@
 					],
 					"query": [
 						{
-							"key": "file",
-							"value": null,
-							"disabled": true
+							"key": "sortBy",
+							"value": "price"
 						}
 					]
 				}
@@ -90,12 +82,12 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": "/C:/Users/rseisser/Documents/Perso/velco2/api/src/main/resources/fichiers/fichierTest"
+							"src": "/C:/Users/rseisser/Documents/Perso/ApiTestVelco/api/src/main/resources/fichiers/fichierRefKo.txt"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://localhost:8888/api/json",
+					"raw": "http://localhost:8888/api/json?sortBy=size",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -107,9 +99,8 @@
 					],
 					"query": [
 						{
-							"key": "file",
-							"value": null,
-							"disabled": true
+							"key": "sortBy",
+							"value": "size"
 						}
 					]
 				}
